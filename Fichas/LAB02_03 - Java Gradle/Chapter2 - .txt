@@ -1,0 +1,67 @@
+
+Pedro Macedo@DESKTOP-1UEM6HL MINGW64 ~
+$ cd D:/LDTS_Year2_Sem1/LAB_02-03
+
+Pedro Macedo@DESKTOP-1UEM6HL MINGW64 /d/LDTS_Year2_Sem1/LAB_02-03
+$ git init
+Initialized empty Git repository in D:/LDTS_Year2_Sem1/LAB_02-03/.git/
+
+Pedro Macedo@DESKTOP-1UEM6HL MINGW64 /d/LDTS_Year2_Sem1/LAB_02-03 (master)
+$ git remote add origin git@github.com:pedronunomacedo/hero.git
+
+Pedro Macedo@DESKTOP-1UEM6HL MINGW64 /d/LDTS_Year2_Sem1/LAB_02-03 (master)
+$ echo ".idea/" >> .gitignore
+
+Pedro Macedo@DESKTOP-1UEM6HL MINGW64 /d/LDTS_Year2_Sem1/LAB_02-03 (master)
+$ echo ".gradle/" >> .gitignore
+
+Pedro Macedo@DESKTOP-1UEM6HL MINGW64 /d/LDTS_Year2_Sem1/LAB_02-03 (master)
+$ echo "out/" >> .gitignore
+
+Pedro Macedo@DESKTOP-1UEM6HL MINGW64 /d/LDTS_Year2_Sem1/LAB_02-03 (master)
+$ echo "build/" >> .gitignore
+
+Pedro Macedo@DESKTOP-1UEM6HL MINGW64 /d/LDTS_Year2_Sem1/LAB_02-03 (master)
+$ echo "*.iml" >> .gitignore
+
+Pedro Macedo@DESKTOP-1UEM6HL MINGW64 /d/LDTS_Year2_Sem1/LAB_02-03 (master)
+$ git status -s
+?? .gitignore
+?? build.gradle
+?? gradle/
+?? gradlew
+?? gradlew.bat
+?? settings.gradle
+
+Pedro Macedo@DESKTOP-1UEM6HL MINGW64 /d/LDTS_Year2_Sem1/LAB_02-03 (master)
+$ git add -A
+warning: LF will be replaced by CRLF in .gitignore.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in gradle/wrapper/gradle-wrapper.properties.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in gradlew.
+The file will have its original line endings in your working directory
+
+Pedro Macedo@DESKTOP-1UEM6HL MINGW64 /d/LDTS_Year2_Sem1/LAB_02-03 (master)
+$ git commit -a -m "Initial version"
+[master (root-commit) f4df6fa] Initial version
+ 7 files changed, 305 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 build.gradle
+ create mode 100644 gradle/wrapper/gradle-wrapper.jar
+ create mode 100644 gradle/wrapper/gradle-wrapper.properties
+ create mode 100644 gradlew
+ create mode 100644 gradlew.bat
+ create mode 100644 settings.gradle
+
+Pedro Macedo@DESKTOP-1UEM6HL MINGW64 /d/LDTS_Year2_Sem1/LAB_02-03 (master)
+$ git push -u origin master
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (11/11), 56.73 KiB | 829.00 KiB/s, done.
+Total 11 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:pedronunomacedo/hero.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
