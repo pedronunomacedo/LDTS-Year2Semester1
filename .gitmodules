@@ -1,0 +1,3 @@
+[submodule "Project/LDTS-Project"]
+	path = Project/LDTS-Project
+	url = git@github.com:pedronunomacedo/LDTS-Project.git
